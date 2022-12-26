@@ -1,0 +1,60 @@
+.main-header {    
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    background-color: rgb(255, 177, 31);
+    height: 80px;
+}
+
+.main-header__title {    
+    font-size: 60px;
+    letter-spacing: 1.5px; 
+    padding: 10px;
+    align-items: center;  
+    animation-name: mudacor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: -1.6px;
+}
+
+.main-header__menu ul {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-header__menu a {
+    padding: 10px 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 27px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+    background-color: var(--blue);
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 1;
+}
+
+.badge-carrinho {
+    padding: 5px 10px;    
+    border-radius: 4px;
+    color: white;
+}
+
+@keyframes mudacor{
+    from{color: black;}
+    to {color: var(--blue);}
+}
